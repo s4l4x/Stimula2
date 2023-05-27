@@ -5,8 +5,8 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
 ## Tutorials
 
 - [The Study of Shaders with React Three Fiber](https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/)
-
 - [The magical world of Particles with React Three Fiber and Shaders](https://blog.maximeheckel.com/posts/the-magical-world-of-particles-with-react-three-fiber-and-shaders/)
+- [FBO particles](https://barradeau.com/blog/?p=621)
 
 ## Future considerations
 
