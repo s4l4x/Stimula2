@@ -10,7 +10,7 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
 
 ## Future considerations
 
-- [ ] Try seeding positions with shape
+- [ ] Try seeding positions with shape (SEE: SimulatiomMaterial constructor)
 - [ ] Use zustand to globally store fft
 - [ ] Add a 16k fft to a 128\*128 texture for use in the shader
 - [ ] Scatter particles on source geometry and use as emmitters/attractors for particle
