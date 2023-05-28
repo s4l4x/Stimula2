@@ -13,24 +13,25 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
 - [ ] Try seeding positions with shape (SEE: SimulatiomMaterial constructor)
 
 '''
-function parseMesh(g){
- 
-    var vertices = g.vertices;
-    var total = vertices.length;
-    var size = parseInt( Math.sqrt( total * 3 ) + .5 );
-    var data = new Float32Array( size*size*3 );
-    for( var i = 0; i < total; i++ ) {
-        data[i * 3] = vertices[i].x;
-        data[i * 3 + 1] = vertices[i].y;
-        data[i * 3 + 2] = vertices[i].z;
+
+    function parseMesh(g){
+        var vertices = g.vertices;
+        var total = vertices.length;
+        var size = parseInt( Math.sqrt( total * 3 ) + .5 );
+        var data = new Float32Array( size*size*3 );
+        for( var i = 0; i < total; i++ ) {
+            data[i * 3] = vertices[i].x;
+            data[i * 3 + 1] = vertices[i].y;
+            data[i * 3 + 2] = vertices[i].z;
+        }
+        return data;
     }
-    return data;
-}
-...
-//then you convert it to a Data texture:
-var data = getRandomData( width, height, 256 );
-var positions = new THREE.DataTexture( data, width, height, THREE.RGBFormat, THREE.FloatType );
-positions.needsUpdate = true;
+    ...
+    // Then you convert it to a Data texture:
+    var data = getRandomData( width, height, 256 );
+    var positions = new THREE.DataTexture( data, width, height, THREE.RGBFormat, THREE.FloatType );
+    positions.needsUpdate = true;
+
 '''
 
 - [ ] Use zustand to globally store fft
