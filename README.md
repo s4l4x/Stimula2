@@ -12,8 +12,6 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
 
 - [ ] Try seeding positions with shape (SEE: SimulatiomMaterial constructor)
 
-'''
-
     function parseMesh(g){
         var vertices = g.vertices;
         var total = vertices.length;
@@ -31,8 +29,6 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
     var data = getRandomData( width, height, 256 );
     var positions = new THREE.DataTexture( data, width, height, THREE.RGBFormat, THREE.FloatType );
     positions.needsUpdate = true;
-
-'''
 
 - [ ] Use zustand to globally store fft
 - [ ] Add a 16k fft to a 128\*128 texture for use in the shader
