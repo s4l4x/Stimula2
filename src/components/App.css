@@ -1,0 +1,39 @@
+.audio-player {
+  --key-color: #8c92a4;
+
+  position: fixed;
+  right: 10px;
+  /* Position this at the bottom of the screen */
+  top: calc(var(--vh, 1vh) * 100);
+  transform: translateY(calc(-100% - 10px));
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  & audio::-webkit-media-controls-panel {
+    background-color: var(--key-color);
+  }
+
+  & input[type='file'] {
+    display: none;
+  }
+
+  & .custom-file-upload {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--key-color);
+    cursor: pointer;
+  }
+
+  & button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 999px;
+    margin: 0;
+  }
+}
