@@ -10,6 +10,8 @@ Based on [GPGPU Curl-noise + DOF](https://codesandbox.io/s/zgsyn) by Paul Hensch
 
 ## Future considerations
 
+- [ ] Try seeding positions with shape
+- [ ] Use zustand to globally store fft
 - [ ] Add a 16k fft to a 128\*128 texture for use in the shader
 - [ ] Scatter particles on source geometry and use as emmitters/attractors for particle
 - [ ] Skin the audio player using [react-audio-player](https://github.com/justinmc/react-audio-player#readme) or [react-h5-audio-player](https://github.com/lhz516/react-h5-audio-player)
